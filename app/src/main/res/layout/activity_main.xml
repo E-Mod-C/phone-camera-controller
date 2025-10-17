@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#1a1a1a">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Camera Remote Control"
+        android:textSize="24sp"
+        android:textColor="#00FFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/ipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textureView"
+        android:layout_marginTop="20dp"
+        android:text="IP: Getting..."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipText"
+        android:layout_marginTop="10dp"
+        android:text="Ready to start"
+        android:textSize="14sp"
+        android:textColor="#00FF00"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/statusText"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Start Server"
+        android:textSize="18sp"
+        android:backgroundTint="#00FFFF"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/instructionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="1. Tap Start Server\n2. Enter IP in PC program\n3. Control cameras from PC!"
+        android:textSize="14sp"
+        android:textColor="#AAAAAA"
+        android:gravity="center"/>
+
+</RelativeLayout>
